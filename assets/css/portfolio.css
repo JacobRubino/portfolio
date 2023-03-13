@@ -1,20 +1,19 @@
-
+:root{
+--bluecard: 28, 85, 242;
+}
 
 body{
-  margin: 0px;
-  padding: 0px;
-  background-color: #cee0ee;
+  margin: auto;
+  background-color: #87afcd;
 }
 
 header {
 
-  background-color: #000000;
+  background-color: #000327;
   box-sizing: border-box;
   display: flex;
-  align-items: center;
   padding: 0 px 30px;
-  color: #fff;
-  
+  color: #fff;  
 }
 
 h1 {
@@ -48,10 +47,6 @@ text-align: center;
 
 }
 
-.menu {
-  display: flex;
-
-}
 
 .menu ul{
   display: flex;
@@ -81,12 +76,15 @@ s
 .menu ul li a img{
   padding-top: 10px;
 }
+
 .about-me {
   margin-top: 10px;
+  margin-bottom: 10px;
   margin-inline: auto;
   padding: 10px 0;
   text-align: center;
   border: #000000 solid;
+  border-radius: 10px;
   width: 25%;
   align-items: center;
 }
@@ -102,54 +100,84 @@ h2 {
   float: right;
 }
 
-.flexbox-container {
-  display: flex;
-  flex-direction: column;
-  padding-left: 37%;
-  padding-right: 13%;  
+.myself img{
+  max-width: 50%;
 }
-
-
-.card {
-  width: 50%;
-  height: 300px;
-  margin: 20px;
-  border: #000000 solid;
-  background-color: #deeaf3;
-  border-radius: 2pc;
+.flexbox-container { 
+  flex-grow: 1;
+  margin: 0 20%;
+  /* border: 2px solid rgba(var(--bluecard), .6); */
+  background-color: rgb(87, 87, 134);
+  /* aspect-ratio: 11/16; */
+  border-radius: 1rem;
   text-align: center;  
+  width: 60%;
+  overflow: hidden;
+
+}
+.card{
+  flex: 1;
+  margin: 25px;
+  min-width: 300px;
+  border: 2px solid rgba(var(--bluecard), .6);
+  background-color: rgba(var(--bluecard), .9);
+  border-radius: 1rem;
+  min-height: 150px;
+}
+.card img{
+  max-height:250px;
 }
 
-.contact{
+
+/* .contact{
   width: 90%;
-  height: 300px;
   margin: 5%;
   border: #000000 solid;
   background-color: #e5edde;
   justify-content: center;
-}
+} */
 
-.contact-me{
+#contact-me{
   width: 50%;
-  height: 300px;
-  margin: 20px;
+  margin: 50px 25%;
   border: #000000 solid;
   background-color: #deeaf3;
-  border-radius: 2pc;
+  border-radius: 1rem;
   text-align: center;
 }
+@media screen and (max-width: 900px) {
+ .flexbox-container{
+  margin: 0 10%;
+  width: 75%;
+ } 
+}
 @media screen and (max-width: 700px) {
-  .flexbox-container, .main {
-    width: 100%; /* The width is 100%, when the viewport is 700px or smaller */
+  .flexbox-container  {
+    margin: 0 5%; /* The width is 100%, when the viewport is 700px or smaller */
+    width: 90%;
     
   }
-  .header ul {
-    list-style: decimal;
-    padding: 0%;
-    align-items: ;
+  header nav ul{
+    flex-direction: column;
   }
-  .flexbox-container{
+  .menu ul li a{
+    border: none;
+  }
+  .firstli{
+    border: none;
+  }
+  #contact-me{
+    width: 76%;
+    margin: 10px 12%;
+  }
+  .about-me{
+    width: 75%;
+  }
+  /* .flexbox-container{
     padding-left: 5%;
     padding-right: 5%;
   }
+  .card{
+    width: 75%;
+  } */
 }

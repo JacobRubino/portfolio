@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="./CSS/reset.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/portfolio.css">
   <title>Jacobs Portfolio</title>
 </head>
@@ -15,20 +15,20 @@
     <nav class="menu">
       <ul style="float: right;">
         <li class="firstli"><a href="https://github.com/JacobRubino" target="_blank">
-          <img src="Assets/Images/GitHub-logoBW.png"
+          <img src="./assets/Images/GitHub-logoBW.png"
           alt="Github page"
           height="30"
           width="53"
         /></a></li>
         <li><a href="https://www.instagram.com/jacob_ru_/" target="_blank">
-          <img src="Assets/Images/instaBW.png"
+          <img src="./assets/Images/instaBW.png"
           alt="Instagram page"
           height="30"
           width="30"
         /></a></li>
         <!-- this will eventually let you search parts on the website? not sure -->
         <li><a href="#">
-          <img src="Assets/Images/magnifying-glass-solid.png"
+          <img src="./assets/Images/magnifying-glass-solid.png"
           alt="search-icon"
           height="30"
           width="30"
@@ -37,17 +37,6 @@
         <!-- i want this to have javascript that puts a list of my contact information, or perhaps just have a container lower with it and autoscrolls to it -->
       </ul>
     </nav>
-    <!-- <div class="search-icon">
-    <a href="#">
-      <img src="Assets/Images/magnifying-glass-solid.png"
-      alt="search-icon"
-      height="30"
-      width="30"
-    /></a></div> -->
-    <!-- <div class="search-box"></div>
-  <input type="text" placeholder=" Search Something Here">
-  <div class="s-icon"><i class="fas fa-search"></i></div> -->
-  <!-- i want this to have a dropdown search box perhaps for projects? im not sure yet, searchbar here to use at a later time. hello -->
   </header>
 
   <main>
@@ -55,36 +44,31 @@
     <div class="about-me">Hi im Jacob and this is my portfolio</div>
       <div class="myself">
         <a href="#">
-        <img src="./assets\images\selfie.png" alt = "This is where my selfie would be!"
-        height="300"
-        width="525">
-        
+        <img src="./assets\images\selfie.png" alt = "This is where my selfie would be!">       
       </a>
       </div>
     
     <h3>Current skills  </h3> 
     <!-- i want these to be two per row but not the best at flexboxing  -->
-      <div class="flexbox-container">
-        <div class="card item-1">Html <br>
+    <div class="d-flex flex row flexbox-container">
+      <div class="card item-1">Html <br>
 
-          <a href="#">
-          <img src="./assets\images\html5.png" alt="HTML5" />
-        </a></div>
-        <div class="card item-2">Css <br>
-          <a href="#">
-          <img src="./assets/images/css.png" alt="CSS" 
-          height="250"
-          width="225">
-          
-        </a></div>
+        <a href="#">
+        <img src="./assets\images\html5.png" alt="HTML5" />
+      </a></div>
+      <div class="card item-2">Css <br>
+        <a href="#">
+        <img src="./assets/images/css.png" alt="CSS">
+        
+      </a></div>
 
-        <sdiv class="card item-3">Javascript <br>
-          <a href="#">
-          <img src="./assets/images/javascript.png" alt="Javascript" />
-        </a></sdiv>
-      
-        <section class="card">coming soon</section>
-      </div>
+      <sdiv class="card item-3">Javascript <br>
+        <a href="#">
+        <img src="./assets/images/javascript.png" alt="Javascript" />
+      </a></sdiv>
+    
+      <section class="card">Coming soon</section>
+    </div>
       <!-- <section class="card">coming soon</section>
       <section class="card">coming soon</section>
       <section class="card">coming soon</section> -->
@@ -93,6 +77,7 @@
         <!-- also want this stuff to be in the middle but cant figure it out right -->
       </div>
     </main>
+    
     
 
     </div>
