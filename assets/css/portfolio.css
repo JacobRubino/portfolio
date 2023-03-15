@@ -127,7 +127,13 @@ h2 {
 .card img{
   max-height:250px;
 }
-
+.card a img{
+  max-width: fit-content;
+  width: 90%
+}
+.title{
+  padding-top: 20px;
+}
 
 /* .contact{
   width: 90%;
@@ -154,8 +160,7 @@ h2 {
 @media screen and (max-width: 700px) {
   .flexbox-container  {
     margin: 0 5%; /* The width is 100%, when the viewport is 700px or smaller */
-    width: 90%;
-    
+    width: 90%;   
   }
   header nav ul{
     flex-direction: column;
@@ -173,11 +178,4 @@ h2 {
   .about-me{
     width: 75%;
   }
-  /* .flexbox-container{
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .card{
-    width: 75%;
-  } */
 }
